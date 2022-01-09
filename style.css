@@ -1,3 +1,124 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,4,64,1) 35%, rgba(0,212,255,1) 100%);
+}
 
+.header {
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin: 2rem 0;
+}
 
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 0.1rem solid black;
+    padding: 2rem;
+}
+
+.computer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 0.1rem solid black;
+    padding: 2rem;
+}
+
+.player-container > div {
+    display: flex;
+    font-size: 3rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.player-container > div > :nth-child(1) {
+    transition: 1.5s;
+}
+
+.player-container > div > :nth-child(2) {
+    transition: 1.5s;
+}
+
+.player-container > div > :nth-child(3) {
+    transition: 1.5s;
+}
+
+.player-container > div > :nth-child(1):hover {
+    transform: scale(2, 2)
+}
+
+.player-container > div > :nth-child(2):hover {
+    transform: scale(2, 2)
+}
+
+.player-container > div > :nth-child(3):hover {
+    transform: scale(2, 2)
+}
+
+.computer-container > div {
+    display: flex;
+    font-size: 3rem;
+    gap: 2rem;
+}
+
+.player-container > .score {
+    justify-content: center;
+    color: red;
+}
+
+.computer-container > .score {
+    justify-content: center;
+    color: red;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 2rem;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 2rem;
+}
+
+.winner {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 4rem;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.reset > button {
+    background-color: darkred;
+    border: 0.2rem solid black;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+}
+
+.reset > button:hover {
+    transform: scale(1.5,1.5);
+}
 
